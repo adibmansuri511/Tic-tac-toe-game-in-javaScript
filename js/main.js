@@ -31,7 +31,7 @@ boxes.forEach((box) => {
     box.addEventListener("click", () => {
         console.log("Box was clicked.")
         if (turnO) { // Player O turn
-            box.innerHTML = `<span style="color: #000">O</span>`;
+            box.innerHTML = `<span style="color: #294B29">O</span>`;
             turnO = false;
         } else { // Player X turn
             box.innerText = "X";
@@ -81,7 +81,6 @@ const showWinner = (winner) => {
 
 const checkWinner = () => {
     for (const pattern of winPatterns) {
-
         // console.log(pattern[0], pattern[1], pattern[2]);
 
         // console.log(
